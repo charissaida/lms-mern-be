@@ -7,7 +7,6 @@ const userSchema = new mongoose.Schema(
     },
     nim: {
       type: String,
-      
     },
     offering: {
       type: String,
@@ -34,6 +33,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       enum: ["admin", "member"],
       default: "member",
+    },
+    institution: {
+      type: String,
+      default: "",
     },
     resetPasswordToken: String,
     resetPasswordExpires: Date,
